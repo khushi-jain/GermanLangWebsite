@@ -1,0 +1,125 @@
+.section-inner {
+    font-size:20px;
+    height: 20vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed;
+
+}
+#table {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url('images/bg2.jpg');
+     background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size:;
+    background-size: cover;
+}
+#hero {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url('images/replacement2.jpg');
+
+}
+
+#hero .profile-img {
+    width: 100px;
+    border-radius: 50%;
+
+}
+
+    .imagesBlock{
+padding: 50px;
+display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+table{
+    padding: 0px;
+
+}
+a { color: black; }
+
+td{
+    padding: 30px;
+    opacity: 0.8; 
+        
+            text-align: center; 
+            vertical-align: middle; 
+            height: 90px; 
+     
+            padding: 0px 10px; 
+            margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer;
+
+}
+
+td:nth-child(odd):hover { 
+            opacity: 1; 
+        } 
+ td:nth-child(even):hover { 
+            opacity: 1; 
+        } 
+
+
+#mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    visibility:hidden;
+    z-index: -2;
+    background: #000;
+    background:rgba(0,0,0,0.8);
+    overflow:hidden;
+    opacity:0;
+    transition: all .5s ease-in-out;
+}
+#mask.showing{
+    opacity:1;
+    z-index: 9000;
+    visibility:visible;
+    overflow:auto;
+    transition: all .5s ease-in-out;
+}
+#boxes {
+    display:table;
+    width:100%;
+    height:100%;
+}
+.window {
+    max-width: 780px;
+    z-index: 9999;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin :auto;
+    background-color: #ffffff;
+    font-family: 'Segoe UI Light', sans-serif;
+    font-size: 15pt;
+}
+.window img {
+    width:100%;
+    height:auto;
+}
+.inner{display:table-cell;vertical-align:middle;}
+#popupfoot {
+    font-size: 16pt;
+}
+.showImage {
+    margin:0 0 3em;
+    display:table;
+    text-align:center
+}
+.showImage img {
+    display:block
+}

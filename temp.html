@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enrollment Form</title>
+        <link rel="stylesheet" href="temp.css">
+    </head>
+
+    <body>
+        <div class="contact-form">
+        <form name="myForm" action="enrldone.html" onsubmit="return validateForm()" method="post">
+            <fieldset class="bg">
+                   <legend><h1>Enrollment Form</h1></legend>
+           
+                   <label for="Name">First name :</label>
+          
+            <input type="text" name="Name" placeholder="enter name"  id="Name">
+            <br>
+            <br>
+            <label for="Surname">Last name : </label>
+
+            <input required type="text" name="Surname" id="Surname">
+            <br>
+
+            <br>
+             <label for="el">Email :</label>
+            <input required type="email" id="el">
+<br>
+<br>
+               <label for="nr">Phone :</label>
+               <input required maxlength="10" type="tel" name="number" id="nr">
+               <br>
+               <br>
+
+             <label for="fn">Father's name :</label>
+             <input required type="text" id="fn" >
+
+             <br>
+             <br>
+             <label for="fcn">Father's Contact :</label>
+             <input required  maxlength="10" type="tel" name="fcn" id="fcn">
+             <br>
+             <br>
+             <label for="mn">Mother's name :</label>
+             <input required type="text" id="mn">
+             <br>
+             <br>
+               <label for="mnc">Mother's Contact :</label>
+               <input  required maxlength="10" type="tel" name="mnc" id="mnc">
+               <br>
+               <br>
+               
+
+              <label for="date">Date of birth : </label>
+            <input required type="date" id="date">
+<br>
+<br>
+
+             <label for="school">Name of the School :</label>
+            <input required type="text" name="school" id="school">
+            <br>
+            <br>
+              <label for="icse">Board  :  ICSE</label>
+            <input type="radio" name="board" id="icse" value="ICSE">
+            <label for="cbse">CBSE</label>
+            <input type="radio" name="board" id="cbse" value="CBSE">
+           <label for="sb">State Board</label>
+            <input required  type="radio" name="board" id="sb" value="State Board">
+            <br>
+            <br>
+
+            <label for="grade">Grade :</label>
+           <select name="" id="">
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+               <option value="10">10</option>
+               <option value="11">11</option>
+               <option value="12">12</option>
+           </select>
+           <br>
+           <br>
+           <label for="mrks">Marks scored in previous grade :</label>
+               <input required type="number" id="mrks">
+               <br>
+               <br>
+              
+              <input type="submit" value="Submit">
+
+        
+              
+        </fieldset>
+
+        </form>
+      </div>
+    <script>
+function validateForm() {
+  var x = document.forms["myForm"]["Name"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  var p = document.forms["myForm"]["mrks"].value;
+  if (p<75) {
+    alert("Marks should be more than 75%");
+    return false;
+  }
+}
+
+
+</script>
+    </body>
+</html>

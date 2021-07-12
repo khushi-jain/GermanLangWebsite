@@ -1,0 +1,44 @@
+body{
+	content: '';
+	position:fixed;
+	width:100vw; 
+	height:100vh;
+	background-image: url(https://image.freepik.com/free-photo/blurred-background-classroom-students-doing-activity_7572-9.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size:;
+	background-size: cover;
+}
+.bg{
+    background:rgba(23,67,88,0.5);
+    font-family: cursive;
+    width:inline-block;
+
+}
+
+fieldset {
+ -moz-border-radius: 20px;
+ -webkit-border-radius: 20px;
+}
+
+.contact-form div{
+	margin: 0;
+	padding: 0;
+		font-size: 100%;
+	font-width:bold;
+	font-family: sans-serif;
+	color: #fff;
+}
+
+.contact-form{
+	position: absolute;
+	margin-bottom: auto;
+	left: 35%;
+	
+	
+	width: 500px;
+	height: 1500px;
+}
+
+ 

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" type="text/css" href="words.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body style="background-image:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url('bg.jpg') ;" >
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>WHAT DO YOU WANT <br>TO LEARN??</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Vocabulary</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Why our site?</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Reviews</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Adjectives</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Thanks!!</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+   <section id="hero">
+                <div class="section-inner">
+                    <img src="images/bot1.png" class="profile-img">
+                    <h1 style="background:rgb(255,0,0,.5);" >Time to learn the basics of German !!</h1>
+                </div>
+            </section>
+
+    <h1 class="w3-xxxlarge w3-text-red"><b>Vocabulary.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+<body>
+
+
+           
+<div class="imagesBlock" id="table"> <table >
+
+   
+   <tr> <td><a class="showImage"><img src="images/1.jpg" width="200" height="200" >WEEKDAYS</a> </td>
+
+   <td> <a class="showImage"><img src="images/2.jpg" width="200" height="200" >MONTHS</a> </td>
+
+   <td> <a class="showImage"><img src="images/3.jpg"  width="200" height="200">SEASONS</a> </td>
+
+  <td>  <a class="showImage"><img src="images/4.png" width="200" height="200">FAMILY NAMES</a></td>
+
+
+</tr>
+
+
+   
+   <tr> <td><a class="showImage"><img src="images/5.jpg" width="200" height="200">DIRECTION</a> </td>
+
+   <td> <a class="showImage"><img src="images/6.png" width="200" height="200">QUESTION WORDS</a> </td>
+
+   <td> <a class="showImage"><img src="images/7.jpg"width="200" height="200">N.E.W.S</a> </td>
+
+  <td>  <a class="showImage"><img src="images/8.jpg"width="200" height="200">NUMBERS</a></td>
+
+
+
+</tr>
+
+
+</tr>
+
+
+
+   <tr> <td><a class="showImage"><img src="images/9.jpg" width="200" height="200">SUBJECTS</a> </td>
+
+   <td> <a class="showImage"><img src="images/10.jpg" width="200" height="200">COLORS</a> </td>
+
+   <td> <a class="showImage"><img src="images/11.jpg" width="200" height="200">EMOTIONS</a> </td>
+
+  <td>  <a class="showImage"><img src="images/12.jpg" width="200" height="200">COUNTRIES</a></td>
+
+
+
+</tr>
+
+
+
+</table>
+ </div>
+
+
+<div id="mask">
+  <div id="boxes">
+    <div class="inner">
+      <div id="dialog" class="window"> <a href="#" class="close">CLOSE</a>
+        <div id="popupfoot"> <img src="#" class="image" alt="Loading..."></img> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+<script>
+$(document).ready(function() {
+
+    function showImage(fullPath) {
+        var id = '#dialog';
+        if (fullPath == "WEEKDAYS") {
+            var fullImagePath =
+                "1a.jpg";
+        }
+        if (fullPath == "MONTHS") {
+            var fullImagePath =
+                "2a.jpg";
+        }
+        if (fullPath == "SEASONS") {
+            var fullImagePath =
+                "3a.png";
+        }
+        if (fullPath == "FAMILY NAMES") {
+            var fullImagePath =
+                "4a.jpg";
+        }
+        if (fullPath == "DIRECTION") {
+            var fullImagePath =
+                "5a.jpg";
+        }
+
+
+        if (fullPath == "QUESTION WORDS") {
+            var fullImagePath =
+                "6a.png";
+        }
+
+        if (fullPath == "N.E.W.S") {
+            var fullImagePath =
+                "7a.png";
+        }
+
+        if (fullPath == "NUMBERS") {
+            var fullImagePath =
+                "8a.png";
+        }
+
+        if (fullPath == "SUBJECTS") {
+            var fullImagePath =
+                "9a.png";
+        }
+
+        if (fullPath == "COLORS") {
+            var fullImagePath =
+                "10a.jpg";
+        }
+
+        if (fullPath == "EMOTIONS") {
+            var fullImagePath =
+                "11a.png";
+        }
+
+        if (fullPath == "COUNTRIES") {
+            var fullImagePath =
+                "12a.jpg";
+        }
+
+
+
+        $('.image').attr({
+            'src': fullImagePath
+        });
+
+
+        //if close button is clicked
+        $('.window .close').click(function(e) {
+            //Cancel the link behavior
+            e.preventDefault();
+
+            $('#mask').removeClass('showing');
+        });
+
+    };
+
+    // 5000 to load it after 5 seconds from page load });
+
+    $(".showImage").on("click", function() {
+        showImage($(this).text());
+        $('#mask').addClass('showing');
+
+    });
+
+});
+</script>
+</body>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Why Our Site?</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We provide the best of the content and display it in a visually attractive manner that makes things easy to undertand what's best for you!</p>
+    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Reviews</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p><b>Our content thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/review1.png" alt="John" style="width: 100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">completely new to the language</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/review2.jpg" alt="Jane" style="width: 100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">noob in german</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/review3.jpg" alt="Mike" style="width: 100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Wanted to strengthen basics</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Adjectives</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Some basic adjectives in german language. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">DEUSCH</li>
+        <li class="w3-padding-16">gut</li>
+        <li class="w3-padding-16">weit</li>
+        <li class="w3-padding-16">jung</li>
+        <li class="w3-padding-16">hoch</li>
+        <li class="w3-padding-16">schon</li>
+        <li class="w3-padding-16">schnell</li>
+        <li class="w3-padding-16">lang</li>
+        
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">English</li>
+        <li class="w3-padding-16">good</li>
+        <li class="w3-padding-16">far</li>
+        <li class="w3-padding-16">young</li>
+        <li class="w3-padding-16">high</li>
+        <li class="w3-padding-16">beautiful</li>
+        <li class="w3-padding-16">fast</li>
+        <li class="w3-padding-16">long</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>THANK YOU FOR VISITING!!<br> We hope to see you again  :)</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+   
+    <form action="/action_page.php" target="_blank">
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"><a href="file:///C:/Users/lenovo/Desktop/HTMLPROJECTS/GermanLangWebsite.html">Back to MAIN PAGE</a></button>
+    </form>  
+  </div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<title>student registration form</title>
+	<link rel="stylesheet"  href="style.css">
+</head>
+<body>
+<div class="contact-form">
+	<img src="images/bot1.png" alt="" class="avatar">
+	<h1>SIGN UP here!</h1>
+	<form action="">
+		<p>Enter your Name:</p>
+		<input type="text" placeholder="enter name" required>
+
+		<p>Email</p>
+		<input type="email" placeholder="example@email.com" required min="1" max="200" step="5">
+
+        <p>Birthdate</p>
+	 		<input type="date" name="date" id="date" max="2019-01-01">
+
+
+        <p>Gender</p><br>
+	 		<div>
+	 			<label for="male">Male</label>
+	 			<input type="radio" name="Gender" id="male" value="male">
+            </div>
+            <div>
+	 			<label for="female">Female</label>
+	 			<input type="radio" name="Gender" id="female" value="female">
+            </div>
+            <div>
+	 			<label for="others">Others</label>
+	 			<input type="radio" name="Gender" id="others" value="others">
+	 		</div>
+          
+
+	 	<p>Age</p>
+	 		<input type="number" name="age" id="age" required>
+	 	
+
+	 	<p>Language you are proficient in</p>
+	
+	 		<select name="bloodtype" id="bloodtype">
+	 			<option value="A+">English</option>
+	 	        <option value="A-">Hindi</option>
+	 	        <option value="A-">German</option>
+	 	        <option value="A-">Spanish</option>
+	 	        <option value="A-">Latin</option>
+	 	        <option value="A-">Japaneese</option>
+	 		</select>
+	 	<br>
+
+	 	<p>File</p>
+	 		<input type="file" name="file" id="file">
+
+	 	<p>Why do you want to learn german?</p>
+	 		<textarea id="bio" name="bio"></textarea><br>
+	 	
+        <p>Phone No.</p>
+        	<input type="tel" name="Phone" id="pnone" placeholder="+91">
+    
+        <p>Password</p>
+	 	<input type="password" name="password" id="password" required>
+	
+
+		<input type="submit" value="submit" >
+		<p><input type="checkbox">Remember Me</p>
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: White;
+}
+.section-inner {
+    font-size:20px;
+    height: 100vh;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed;
+
+}
+
+#hero .profile-img {
+    width: 300px;
+    border-radius: 50%;
+
+}
+
+
+.cd-logo {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #6495ED ;
+  background-size: cover;
+  min-height: 100%;
+}
+
+
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: white;
+  text-align:center
+}
+
+
+
+.textSection {
+  background:rgb(255,0,0,.5);
+  padding:100px 80px;
+}
+.cd-logo, .kitchen-equipment,.cake-ingredients,.ingredients, .culture , .science,.logo{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #6495ED;
+  background-size: cover;
+
+  background-attachment: fixed;
+  min-height: 50%;
+  opacity: 0.7;
+}
+.cd-logo{
+  background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)),url("images/preeti2.jpg");
+  background-size: cover;
+  min-height: 100%;
+ 
+}
+
+.kitchen-equipment{
+  background-image: url("images/europe.jpg");
+ 
+}
+
+.cake-ingredients{
+  background-image: url("images/money.jpg");
+ 
+}
+
+.ingredients{
+  background-image: url("images/texting.jpg");
+ 
+}
+
+.culture{
+  background-image: url("images/christmas.jpg");
+}
+.science{
+  background-image: url("images/science.jpeg");
+}
+
+.logo{
+  background-image: url("images/preeti2.jpg");
+ 
+}
+
+a{color: white;}
+
+.caption {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
